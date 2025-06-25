@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Network Installation & Management</title>
+    <link rel="icon" href="media/logo.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section id="Home">
+        <nav class="main-nav">
+            <div class="nav-brand">
+                <img src="media/logo.jpg" alt="Logo" class="nav-logo">
+                <span class="nav-title">HAI TWINS RESOURCES GLOBAL</span>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li style="--i:1"><a href="#Home">Home</a></li>
+                <li style="--i:2"><a href="#services">Services</a></li>
+                <li style="--i:3"><a href="#Projects">Projects</a></li>
+                <li style="--i:4"><a href="#about">About</a></li>
+                <li style="--i:5"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <header class="hero-header">
+            <div class="hero-bg-anim"></div>
+            <div class="hero-content">
+                <div class="hero-icon-bounce">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <h1 class="hero-title animate-hero-title">Network Installation &amp; Management</h1>
+                <p class="hero-sub animate-hero-sub">Empowering your business with secure, scalable, and seamless connectivity</p>
+                <ul class="hero-animated-list">
+                    <li class="active">Fast &amp; Reliable Network Installation</li>
+                    <li>Expert Network Management Services</li>
+                    <li>Secure &amp; Scalable Solutions</li>
+                    <li>24/7 Technical Support</li>
+                </ul>
+                <a href="#contact" class="hero-cta-btn">Get Started</a>
+            </div>
+           
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const heroTexts = document.querySelectorAll('.hero-animated-list li');
+                    let heroCurrent = 0;
+                    setInterval(() => {
+                        heroTexts[heroCurrent].classList.remove('active');
+                        heroCurrent = (heroCurrent + 1) % heroTexts.length;
+                        heroTexts[heroCurrent].classList.add('active');
+                    }, 2500);
+                });
+            </script>
+        </header>
+    </section>
+    <div class="container">
+        <div class="showcase-icon">
+            <div class="showcase-icon-main">
+                <a href="tel:(262) 873-0920"><i class="fa-solid fa-phone"></i></a>
+                <a href="sms:(262) 873-0920"><i class="fa-solid fa-comment"></i></a>
+                <a href="#"><i class="fa-solid fa-star"></i></a>
+                <a href="#"><i class="fa-solid fa-calculator"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href="mailto:codis1723@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+            </div>
+        </div>
+
+        <section id="services"></section>
+            <h2 class="services-title animate-slide-in">Our Services</h2>
+            <hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1603341872">
+            <div class="services-grid">
+                <div class="service-card animate-fade-in">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-cable-car"></i>
+                    </div>
+                    <h3>Structured Cabling</h3>
+                    <p>Expert design and installation of fiber optic and copper cabling for robust, future-ready networks in any environment.</p>
+                    <ul>
+                        <li>Certified cable management & testing</li>
+                        <li>Labeling & documentation</li>
+                        <li>Maintenance & upgrades</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-fade-in" style="animation-delay:0.15s;">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <h3>Wireless Solutions</h3>
+                    <p>Seamless Wi-Fi for offices, campuses, and public spaces, with site surveys, optimization, and secure guest access.</p>
+                    <ul>
+                        <li>Indoor & outdoor deployments</li>
+                        <li>Performance tuning</li>
+                        <li>Ongoing support</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-fade-in" style="animation-delay:0.3s;">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3>Network Design</h3>
+                    <p>Custom LAN/WAN architecture, secure routing, and scalable solutions tailored to your business needs.</p>
+                    <ul>
+                        <li>Integration with legacy systems</li>
+                        <li>Segmentation & security</li>
+                        <li>Growth-ready infrastructure</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-fade-in" style="animation-delay:0.45s;">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Network Security</h3>
+                    <p>Comprehensive protection with firewalls, VPNs, endpoint security, and 24/7 monitoring.</p>
+                    <ul>
+                        <li>Vulnerability assessments</li>
+                        <li>Intrusion prevention</li>
+                        <li>Security audits</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-fade-in" style="animation-delay:0.6s;">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-server"></i>
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3>Server & Data Center</h3>
+                    <p>Deployment, configuration, and maintenance of physical/virtual servers and resilient data centers.</p>
+                    <ul>
+                        <li>Backup & disaster recovery</li>
+                        <li>High availability</li>
+                        <li>Ongoing technical support</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-fade-in" style="animation-delay:0.75s;">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3>VoIP & Telephony</h3>
+                    <p>Modern IP-based voice solutions, PBX setup, and seamless integration for clear, scalable communications.</p>
+                    <ul>
+                        <li>IP phone installation</li>
+                        <li>Call routing & PBX</li>
+                        <li>Unified communications</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-fade-in" style="animation-delay:0.9s;">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>24/7 proactive monitoring, troubleshooting, and rapid response to keep your network running smoothly.</p>
+                    <ul>
+                        <li>Remote & on-site support</li>
+                        <li>Preventive maintenance</li>
+                        <li>Fast issue resolution</li>
+                    </ul>
+                </div>
+            </div>
+          
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const cards = document.querySelectorAll('.service-card');
+                    cards.forEach((card, i) => {
+                        setTimeout(() => {
+                            card.style.opacity = 1;
+                            card.style.transform = 'translateY(0)';
+                        }, 250 + i * 150);
+                    });
+                });
+            </script>
+        </section>
+        <section id="Projects">
+            <h2>Featured Projects</h2>
+            <hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image animate-fade-in">
+                        <img src="media/item1.jpg" alt="Smart Office Transformation">
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Office Transformation</h3>
+                        <p>Upgraded a traditional office into a smart workspace with structured cabling, enterprise Wi-Fi, and IoT device integration for enhanced productivity and security.</p>
+                        <ul>
+                            <li>High-speed fiber backbone</li>
+                            <li>Secure wireless zones</li>
+                            <li>Automated access control</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image animate-fade-in" style="animation-delay:0.2s;">
+                        <img src="media/item2.jpg" alt="Financial Data Center Modernization">
+                    </div>
+                    <div class="project-info">
+                        <h3>Financial Data Center Modernization</h3>
+                        <p>Designed and deployed a resilient data center for a leading bank, featuring redundant power, advanced firewalls, and real-time monitoring.</p>
+                        <ul>
+                            <li>24/7 uptime guarantee</li>
+                            <li>Disaster recovery planning</li>
+                            <li>Multi-layered security</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image animate-fade-in" style="animation-delay:0.4s;">
+                        <img src="media/item3.jpg" alt="Campus-wide Wi-Fi Rollout">
+                    </div>
+                    <div class="project-info">
+                        <h3>Campus-wide Wi-Fi Rollout</h3>
+                        <p>Implemented seamless wireless coverage across a university, supporting thousands of users and secure guest access with centralized management.</p>
+                        <ul>
+                            <li>Roaming support</li>
+                            <li>Bandwidth optimization</li>
+                            <li>Guest network portals</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image animate-fade-in" style="animation-delay:0.6s;">
+                        <img src="media/item4.jpg" alt="Retail Chain Network Integration">
+                    </div>
+                    <div class="project-info">
+                        <h3>Retail Chain Network Integration</h3>
+                        <p>Connected multiple retail outlets with a unified network for POS, inventory, and customer analytics, enabling real-time data and secure transactions.</p>
+                        <ul>
+                            <li>Centralized management</li>
+                            <li>PCI-compliant security</li>
+                            <li>Customer Wi-Fi analytics</li>
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+        <div class="project-info" style="display: flex; flex-direction: column; align-items: center; margin-top: 24px;">
+            <a href="projects.html" class="see-more-btn">See More Projects</a>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                    const animatedImages = document.querySelectorAll('.animate-fade-in');
+                    animatedImages.forEach((img, i) => {
+                        setTimeout(() => {
+                            img.style.opacity = 1;
+                            img.style.transform = 'translateY(0)';
+                        }, 200 + i * 200);
+                    });
+                });
+            </script>
+        </section>
+        <section id="about" class="about-section">
+            <h2 class="about-title animate-slide-in">About Us</h2>
+            <div class="about-content animate-fade-in">
+                <p>
+                    HAI TWINS RESOURCES GLOBAL is a leading provider of network installation and management solutions. With years of experience, our team delivers reliable, secure, and scalable networking services for businesses, schools, and organizations of all sizes.
+                </p>
+                <p>
+                    We are committed to excellence, innovation, and customer satisfaction. Our certified professionals use the latest technologies to design, implement, and maintain robust network infrastructures tailored to your needs.
+                </p>
+                <p>
+                    Partner with us for seamless connectivity, expert support, and future-ready solutions that empower your business to thrive in the digital age.
+                </p>
+            </div>
+            <div class="about-btn-container animate-bounce-in">
+                <a href="about.html" class="about-more-btn">Learn More</a>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <form id="contactForm" class="contact-form" autocomplete="off" style="margin-bottom:32px;">
+                <div style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center;">
+                    <input type="text" name="name" placeholder="Your Name" required style="flex:1 1 180px; padding:10px; border-radius:6px; border:1px solid #bcdcff;">
+                    <input type="email" name="email" placeholder="Your Email" required style="flex:1 1 180px; padding:10px; border-radius:6px; border:1px solid #bcdcff;">
+                </div>
+                <textarea name="message" placeholder="Your Message" required rows="4" style="width:96%; margin:16px 0 0 0; padding:10px; border-radius:6px; border:1px solid #bcdcff;"></textarea>
+                <br>
+                <button type="submit" style="margin-top:12px; padding:10px 32px; background:#2a4d7a; color:#fff; border:none; border-radius:24px; font-size:1em; font-weight:600; cursor:pointer; transition:background 0.2s;">Send Message</button>
+            </form>
+            <!-- To make the form functional and send emails, you need a backend service.
+                For static sites, you can use a service like Formspree, EmailJS, or Getform.
+                Example using Formspree: -->
+            <form action="https://formspree.io/f/xldnobyl" method="POST" id="realContactForm" style="display:none;">
+                <input type="text" name="name">
+                <input type="email" name="email">
+                <textarea name="message"></textarea>
+                <!-- HoneyPot -->
+                <input type="hidden" name="_honey" value="">
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_next" value="https://constructionsux.github.io/boko/index.html#contact">
+            </form>
+            <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Copy values to hidden real form
+                const realForm = document.getElementById('realContactForm');
+                realForm.elements.name.value = this.elements.name.value;
+                realForm.elements.email.value = this.elements.email.value;
+                realForm.elements.message.value = this.elements.message.value;
+                // Submit hidden form
+                realForm.submit();
+                // Show popup
+                this.reset();
+                const popup = document.getElementById('successPopup');
+                popup.style.display = 'block';
+                setTimeout(() => {
+                   popup.style.display = 'none';
+                }, 2500);
+            });
+            </script>
+        
+            <div id="successPopup" style="display:none; position:fixed; top:30px; left:50%; transform:translateX(-50%); background:#4fa3ff; color:#fff; padding:18px 32px; border-radius:8px; box-shadow:0 2px 12px rgba(44,104,255,0.15); font-size:1.1em; z-index:9999;">
+                <i class="fa-solid fa-circle-check" style="margin-right:8px;"></i> Message sent successfully!
+            </div>
+            <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Simulate sending (you can add AJAX here)
+                this.reset();
+                const popup = document.getElementById('successPopup');
+                popup.style.display = 'block';
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                }, 2500);
+            });
+            </script>
+            <h2 class="contact-title animate-slide-in">Contact Us</h2>
+            <div class="contact-cards">
+                <div class="contact-card animate-fade-in">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <h3>Call Us</h3>
+                    <a href="tel:++2348039617837">+234-8039617837</a>
+                    <a href="tel:+123456789">+234-8123759044</a>
+                </div>
+                <div class="contact-card animate-fade-in" style="animation-delay:0.2s;">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:haitwinsglobal@gmail.com">haitwinsglobal@gmail.com</a>
+                </div>
+                <div class="contact-card animate-fade-in" style="animation-delay:0.4s;">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Address</h3>
+                      <p>
+                        Suit 204 AHCN Tower Building, CIPM Road, Alausa, Ikeja, Lagos<br>
+                        <button id="showMapBtn" style="margin-top:8px; background:linear-gradient(135deg, #2a4d7a 0%, #4fa3ff 100%); color:#fff; border:none; border-radius:16px; padding:6px 18px; cursor:pointer; font-size:0.95em;">Show on Map</button>
+                    </p>
+                    <div id="mapContainer" style="display:none; margin-top:12px;">
+                        <iframe
+                            id="mapIframe"
+                            width="220"
+                            height="160"
+                            style="border:0; border-radius:10px;"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('showMapBtn');
+    const mapDiv = document.getElementById('mapContainer');
+    const mapIframe = document.getElementById('mapIframe');
+    btn.addEventListener('click', function() {
+        mapDiv.style.display = 'block';
+        mapIframe.src = "https://www.google.com/maps?q=Suit+204+AHCN+Tower+Building,+CIPM+Road,+Alausa,+Ikeja,+Lagos&output=embed";
+        btn.style.display = 'none';
+    });
+});
+</script>
+
+                </div>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const cards = document.querySelectorAll('.contact-card');
+                    cards.forEach((card, i) => {
+                        setTimeout(() => {
+                            card.style.opacity = 1;
+                            card.style.transform = 'translateY(0)';
+                        }, 300 + i * 200);
+                    });
+                });
+            </script>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Network Installation & Management. All rights reserved.
+    </footer>
+</body>
+</html>

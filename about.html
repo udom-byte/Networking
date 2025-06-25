@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - HAI TWINS RESOURCES GLOBAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #0d253f;
+            --accent: #01b4e4;
+            --accent-light: #90cdf4;
+            --background: #f4f8fb;
+            --surface: #fff;
+            --text: #1a202c;
+            --muted: #4a5568;
+            --radius: 18px;
+            --shadow: 0 8px 40px rgba(13,37,63,0.10);
+            --transition: 0.32s cubic-bezier(.4,2,.6,1);
+        }
+        html {
+            box-sizing: border-box;
+            font-size: 17px;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        body {
+            font-family: 'Segoe UI', 'Inter', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--accent-light) 0%, var(--background) 60%, #e3f6fd 100%);
+            color: var(--text);
+            position: relative;
+            overflow-x: hidden;
+            letter-spacing: 0.01em;
+        }
+        body::before, body::after {
+            content: "";
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        body::before {
+            top: -80px;
+            left: -80px;
+            width: 420px;
+            height: 420px;
+            background: radial-gradient(circle, var(--accent) 0%, var(--accent-light) 80%);
+            opacity: 0.10;
+        }
+        body::after {
+            bottom: -120px;
+            right: -120px;
+            width: 540px;
+            height: 540px;
+            background: radial-gradient(circle, #01b4e4 0%, var(--background) 90%);
+            opacity: 0.09;
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
+            color: #fff;
+            padding: 44px 0 28px 0;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 6px 32px rgba(13,37,63,0.10);
+            position: relative;
+            z-index: 1;
+            animation: fadeInDown 1s;
+        }
+        header h1 {
+            font-size: 2.3em;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.2em;
+        }
+        header p {
+            font-size: 1.15em;
+            color: #e3f6fd;
+            margin-top: 0;
+            opacity: 0.92;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .container {
+            max-width: 950px;
+            margin: 56px auto 48px auto;
+            background: rgba(255,255,255,0.98);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 56px 54px 44px 54px;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1.2s;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+            letter-spacing: 0.01em;
+            font-size: 1.45em;
+            font-weight: 700;
+            border-left: 5px solid var(--accent);
+            padding-left: 0.6em;
+            margin-bottom: 0.7em;
+        }
+        ul {
+            padding-left: 1.5em;
+            margin-bottom: 1.2em;
+        }
+        ul li {
+            margin-bottom: 0.4em;
+            color: var(--muted);
+            font-size: 1.04em;
+        }
+        p {
+            line-height: 1.7;
+            margin-bottom: 1.1em;
+            color: #1a202c;
+        }
+        strong {
+            color: var(--primary);
+        }
+        .team {
+            display: flex;
+            gap: 38px;
+            flex-wrap: wrap;
+            margin-top: 38px;
+            justify-content: center;
+        }
+        .member {
+            flex: 1 1 230px;
+            background: linear-gradient(120deg, var(--accent-light) 60%, #f0f4f8 100%);
+            border-radius: 16px;
+            padding: 32px 20px 24px 20px;
+            text-align: center;
+            transition: transform var(--transition), box-shadow var(--transition), background 0.4s;
+            cursor: pointer;
+            box-shadow: 0 4px 18px rgba(1,180,228,0.10);
+            position: relative;
+            overflow: hidden;
+            border: 1.5px solid #e3f6fd;
+        }
+        .member:hover, .member:focus {
+            transform: translateY(-12px) scale(1.055);
+            box-shadow: 0 14px 40px rgba(1,180,228,0.16);
+            background: linear-gradient(120deg, #e3f6fd 60%, var(--accent-light) 100%);
+            border-color: var(--accent);
+        }
+        .member img {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            margin-bottom: 16px;
+            border: 3.5px solid var(--accent);
+            box-shadow: 0 2px 12px rgba(1,180,228,0.13);
+            background: #fff;
+            object-fit: cover;
+            transition: border-color 0.3s;
+        }
+        .member:hover img {
+            border-color: var(--primary);
+        }
+        .member-name {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.18em;
+            margin-bottom: 2px;
+            letter-spacing: 0.01em;
+        }
+        .member-role {
+            font-size: 1.04em;
+            color: var(--muted);
+            margin-bottom: 10px;
+        }
+        .fun-fact {
+            margin-top: 16px;
+            font-size: 1em;
+            color: #01b4e4;
+            background: #e3f6fd;
+            border-radius: 7px;
+            padding: 10px 14px;
+            display: none;
+            box-shadow: 0 2px 10px rgba(1,180,228,0.09);
+            animation: fadeInFact 0.5s;
+            font-style: italic;
+        }
+        @keyframes fadeInFact {
+            from { opacity: 0; transform: scale(0.95);}
+            to { opacity: 1; transform: scale(1);}
+        }
+        a button, button {
+            padding: 14px 32px;
+            font-size: 1.08em;
+            background: linear-gradient(90deg, var(--accent) 60%, var(--primary) 100%);
+            color: #fff;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+            box-shadow: 0 2px 10px rgba(1,180,228,0.08);
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+        a button:hover, button:hover {
+            background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
+            box-shadow: 0 6px 24px rgba(1,180,228,0.13);
+            transform: translateY(-2px) scale(1.03);
+        }
+        @media (max-width: 1100px) {
+            .container { padding: 36px 18px 24px 18px; }
+            .team { gap: 18px; }
+        }
+        @media (max-width: 700px) {
+            .container { padding: 18px 4px 12px 4px; }
+            .team { flex-direction: column; gap: 16px; }
+            .member { padding: 20px 8px 16px 8px; }
+            header { padding: 28px 0 16px 0; border-radius: 0 0 24px 24px; }
+        }
+        @media (max-width: 480px) {
+            html { font-size: 15px; }
+            .container { padding: 8px 0 6px 0; }
+            .member img { width: 64px; height: 64px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About HAI TWINS RESOURCES GLOBAL</h1>
+        <p>Learn more about our mission and the team behind HAI TWINS RESOURCES GLOBAL.</p>
+    </header>
+    <div class="container">
+        <h2>About HAI TWINS RESOURCES GLOBAL</h2>
+        <p>
+            HAI TWINS RESOURCES GLOBAL is a leading provider of cutting-edge networking and ICT solutions. With a strong commitment to innovation, reliability, and customer satisfaction, we specialize in the design, installation, and maintenance of network infrastructures for businesses, institutions, and government organizations.
+        </p>
+        <p>
+            Our mission is to empower clients with seamless connectivity through robust, secure, and scalable network systems. We combine technical expertise with a client-focused approach to deliver tailored solutions that meet the demands of the modern digital world.
+        </p>
+        <h2>Our Mission</h2>
+        <ul>
+            <li>To deliver high-performance network solutions that drive business growth.</li>
+            <li>To provide reliable and secure infrastructure tailored to client needs.</li>
+            <li>To maintain long-term partnerships through exceptional service and support.</li>
+        </ul>
+        <h2>Clients and Sectors Served</h2>
+        <p>We have served clients across multiple industries, including:</p>
+        <ul>
+            <li>Financial Institutions</li>
+            <li>Educational Institutions</li>
+            <li>Government Agencies</li>
+            <li>Health Facilities</li>
+            <li>Corporate Offices</li>
+        </ul>
+        <ul>
+            <li>UBA Bank / First Bank Head Quarters Lagos</li>
+            <li>Covenant University Lagos</li>
+            <li>Dangote Refinery Lagos</li>
+            <li>International Airport / Legend Hotel Lagos</li>
+            <li>Small and Medium Enterprises (SMEs) - Taylor Communication Company</li>
+        </ul>
+        <h2>Team and Expertise</h2>
+        <p>
+            Our team consists of certified professionals with expertise in networking, cybersecurity, and systems engineering. We are committed to continuous training and upskilling to stay ahead of industry trends and technologies.
+        </p>
+        <p><strong>HAI TWINS RESOURCES GLOBAL</strong><br>
+        Founded: 2015</p>
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="member" onclick="showFact(this)">
+                <img src="media/ceo.jpg" alt="Team Member">
+                <div class="member-name">MR. IFEANYI HENRY ABOAJA</div>
+                <div class="member-role">CEO</div>
+                <div class="fun-fact">Loves hiking and open-source projects!</div>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top:32px;">
+            <a href="index.html">
+                <button style="padding: 12px 28px; font-size: 1em; background: #6366f1; color: #fff; border: none; border-radius: 8px; cursor: pointer; transition: background 0.2s;">
+                    Back to Home
+                </button>
+            </a>
+        </div>
+    </div>
+    <script>
+        function showFact(memberDiv) {
+            // Hide all fun facts first
+            document.querySelectorAll('.fun-fact').forEach(fact => fact.style.display = 'none');
+            // Show the clicked member's fun fact
+            const fact = memberDiv.querySelector('.fun-fact');
+            if (fact) fact.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
